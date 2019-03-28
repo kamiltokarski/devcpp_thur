@@ -26,6 +26,47 @@
     
         <div class="post-container">
     <div class="alert alert-light dates">
+        <h6>Utworzono: 2019-03-28 16:58:36</h6>
+        <h6>Edytowano: Thu Mar 28 17:01:38 2019</h6>
+    </div>
+    <div class="content">
+        <h1>Iteracja po elementach mapy</h1>
+<hr />
+<pre><code class="cpp">#include &lt;iostream&gt;
+#include &lt;map&gt;
+using namespace std;
+
+
+map&lt;int, int&gt; M;
+
+
+int main() {
+    int N;
+    int a, x;
+    cin &gt;&gt; N;
+
+    for(int i = 0; i &lt; N; ++i) {
+        cin &gt;&gt; a &gt;&gt; x;
+        M[a] += x; // wrzucamy jakies wartosci na mape
+    }
+
+    for(auto v : M) {
+        int a = v.first; // klucz
+        int x = v.second; // wartosc
+        cout &lt;&lt; a &lt;&lt; &quot; &quot; &lt;&lt; x &lt;&lt; endl;
+    }
+
+    return 0;
+}
+</code></pre>
+    </div>
+
+    <br>
+    <hr>
+</div>
+    
+        <div class="post-container">
+    <div class="alert alert-light dates">
         <h6>Utworzono: 2019-03-28 16:41:43</h6>
         <h6>Edytowano: Thu Mar 28 16:42:21 2019</h6>
     </div>
